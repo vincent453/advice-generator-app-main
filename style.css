@@ -1,0 +1,154 @@
+body{
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    
+}
+
+.main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        text-align: center;
+        background-color: hsl(217, 19%, 24%);
+        max-width: 550px;
+        width:40rem;
+        height:20rem;
+        
+        
+        
+}
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 6rem;
+    
+}
+
+.Advice{
+    width: 10rem;
+    word-spacing: 7px;
+    letter-spacing: 3px;
+    position: relative;
+    font-size: 17px;
+    color: hsl(150, 100%, 66%);
+    top: 10px;
+    font-weight: lighter;
+    
+}
+.divider{
+    position: absolute;
+    display: flex;
+    width: 23rem;
+    top: 15rem;
+}
+.dice{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+}
+.dice-div{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    background-color: hsl(150, 100%, 66%);
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 18rem;
+    cursor: pointer;
+
+}
+
+.dice-div:hover{
+    box-shadow: 0 0 20px hsl(150, 100%, 66%);
+}
+
+.adviceText{
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+    position:static;
+    display: flex;
+    
+   
+}
+.adviceDiv{
+    width: 29rem;
+    display: flex;
+    justify-content: center;
+    top: 19rem;
+}
+.attribution {
+   
+    align-items: center;
+    top: 30rem;
+    position: absolute;
+    color: hsl(193, 38%, 86%);
+    font-size: 15px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+.mobDivider{
+    display: none;
+}
+
+@media all and (max-width:375px) {
+    .main{
+        width: 22rem;
+    }
+    .container{
+        top: 1rem;
+    }
+
+    .divider{
+       display: none;
+
+    }
+    .mobDivider{
+        display: block;
+        position: absolute;
+        top: 15rem;
+    }
+    .Advice{
+        top: 2rem;
+    }
+    .adviceText{
+        font-size: 20px;
+        color: hsl(193, 38%, 86%);
+        width: 19rem;
+        height: 10rem;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .attribution{
+        top: 25rem;
+    }
+    .adviceDiv{
+        width: 20rem;
+    }
+}
+
+@media all and (max-width:375px){
+    .main{
+        width: 18rem;
+    }
+
+    .mobDivider{
+        width: 17rem;
+    }
+    .adviceText{
+        font-size: 1rem;
+        width: 16rem;
+    }
+    .adviceDiv{
+        width: 15rem;
+    }
+}
